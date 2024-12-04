@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+           C R U D
+        </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      
+    <h1 class="text-center">C R U D</h1>
+      <div class="container py-5">
+        <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <input id="productName" type="text" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="productPrice">Product price:</label>
+            <input id="productPrice" type="number" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="productCategory">Product category:</label>
+            <input id="productCategory" type="text" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="productDesc">Product Desc:</label>
+            <textarea id="productDesc" type="text" class="form-control"></textarea>
+        </div>
+        <br>
+        <button id="mainBtn" class="btn btn-outline-info" onclick="addProduct()">Add Proudct</button>
+      </div>
+        <div class="container">
+            <input onkeyup="searchProduct(this.value)" placeholder="Search" type="text" class="form-control w-75 m-auto">
+            <table class="table my-5">
+                <thead>
+                    <th>index</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Desc</th>
+                    <th>Updata</th>
+                    <th>Delete</th>
+
+                </thead>
+                <tbody id="tableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <script src="js/jquery-3.7.1.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
